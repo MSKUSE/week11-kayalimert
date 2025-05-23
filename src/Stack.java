@@ -1,7 +1,9 @@
+import java.util.EmptyStackException;
+
 public interface Stack {
 
     void push(Object item);
-    Object pop();
+    Object pop() throws MyEmptyStackException;
     void peek();
     boolean isEmpty();
 
